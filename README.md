@@ -147,16 +147,21 @@ rm -rf /tmp/agysecurityreview
 
 ### In Antigravity / AGY Chat
 
-Trigger the skill using the slash command:
+#### 1. Scan Scopes
 
-```text
-/security-review
-```
+| Scope | Command / Syntax | Description |
+| :--- | :--- | :--- |
+| **Branch / Diff Scan** *(Default)* | `/security-review` | Rapid, high-signal audit of uncommitted modifications or branch diff against base. |
+| **Full Codebase Scan** | `/security-review --codebase` | Comprehensive multi-agent review across all application components, API routes, and queries. |
+| **Commit Scan** | `/security-review --commit <sha>` | Audits a specific commit against its parent (`<sha>~1..<sha>`). |
 
-Or using natural language:
-- *"Review my changes before commit for security issues"*
-- *"Run a security audit on this repository"*
-- *"Scan this branch diff for vulnerabilities"*
+#### 2. Natural Language Commands
+
+You can also trigger specific scopes using natural language:
+- *"Scan the entire codebase for security vulnerabilities"* (`--codebase`)
+- *"Run a full repository security audit"*
+- *"Review my uncommitted changes before commit"*
+- *"Audit commit abc1234 for vulnerabilities"*
 
 ### Standalone CLI Execution
 
