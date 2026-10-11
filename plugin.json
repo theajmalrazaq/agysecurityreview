@@ -1,0 +1,10 @@
+{
+  "name": "agysecurityreview",
+  "version": "1.0.0",
+  "description": "Adversarial multi-agent security vulnerability review and automated patch generator for Antigravity (AGY).",
+  "author": "Ajmal Razaq",
+  "homepage": "https://github.com/theajmalrazaq/agysecurityreview",
+  "skills": [
+    "security-review"
+  ]
+}
